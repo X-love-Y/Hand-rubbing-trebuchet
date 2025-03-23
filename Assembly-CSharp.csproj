@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Move.cs" />
     <Compile Include="Assets\Script\Draggable.cs" />
+    <Compile Include="Assets\Script\CarController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
