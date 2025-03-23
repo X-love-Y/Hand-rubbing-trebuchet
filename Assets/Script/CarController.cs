@@ -50,6 +50,14 @@ public class CarController : MonoBehaviour
         {
             ApplyBreaking();
         }
+        else
+        {
+            // 如果没有刹车，清除刹车力
+            frontRightWheelConllider.brakeTorque = 0f;
+            frontLeftWheelConllider.brakeTorque = 0f;
+            BehindLeftWheelConllider.brakeTorque = 0f;
+            BehindRightWheelConllider.brakeTorque = 0f;
+        }
     }
 
     private void ApplyBreaking()
