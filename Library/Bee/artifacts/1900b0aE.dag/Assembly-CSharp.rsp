@@ -353,8 +353,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/unity/Unity 2022.3.2f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/unity/Unity 2022.3.2f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Script/AttackTarget.cs"
 "Assets/Script/CameraFollow.cs"
 "Assets/Script/CarController.cs"
+"Assets/Script/CollisionList.cs"
 "Assets/Script/Draggable.cs"
 "Assets/Script/Move.cs"
 -langversion:9.0

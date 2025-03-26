@@ -60,7 +60,9 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CameraFollow.cs" />
     <Compile Include="Assets\Script\Move.cs" />
+    <Compile Include="Assets\Script\AttackTarget.cs" />
     <Compile Include="Assets\Script\Draggable.cs" />
+    <Compile Include="Assets\Script\CollisionList.cs" />
     <Compile Include="Assets\Script\CarController.cs" />
   </ItemGroup>
   <ItemGroup>
