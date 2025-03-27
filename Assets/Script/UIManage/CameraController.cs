@@ -33,6 +33,16 @@ public class CameraController : MonoBehaviour
         //transform.forward,transform.right都是以当前transform来判断的，故会考虑到旋转
         transform.position += moveSpeed * moveVector * Time.deltaTime;
         //transform.position += inputMoveDir * movespeed * Time.deltaTime;这样写的话如果摄像机旋转，wasd移动方向还是会按照默认方向来，不可行
+        Vector3 PosFix = transform.position;
+        if (PosFix.x < -50f)
+            PosFix.x = -50f;
+        else if (PosFix.x > 50f)
+            PosFix.x = 50f;
+        if (PosFix.z < -50f)
+            PosFix.z = -50f;
+        else if (PosFix.z > 50f)
+            PosFix.z = 50f;
+        transform.position = PosFix;
 
         Vector3 rotationVector = new Vector3(0, 0, 0);
 
