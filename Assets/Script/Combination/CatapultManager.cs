@@ -1,9 +1,11 @@
+using NodeCanvas.DialogueTrees;
 using UnityEngine;
 
 public class CatapultManager : MonoBehaviour
 {
     public static CatapultManager Instance;
 
+    [SerializeField] DialogueTreeController dialogueTree;
     [Header("总部件数量")]
     public int totalParts = 5;
     private int connectedParts = 0;
@@ -18,8 +20,8 @@ public class CatapultManager : MonoBehaviour
         connectedParts++;
         if (connectedParts == totalParts)
         {
-            Debug.Log("投石车组装完成！");
-            // 触发完成事件（如播放动画）
+            dialogueTree.StartDialogue();
+            // 触发完成事件
         }
     }
 }
