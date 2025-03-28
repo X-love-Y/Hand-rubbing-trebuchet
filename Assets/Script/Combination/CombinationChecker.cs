@@ -21,9 +21,8 @@ public class CombinationChecker : MonoBehaviour
             return;
 
         // 检查部件类型是否匹配（例如：轮子只能连接到底座）
-        if (otherPart.partType == thisPart.partType && !CheckOver)
+        if (otherPart.partType == thisPart.partType && !CheckOver && otherPart.CompareTag("Author"))
         {
-            Debug.Log(2);
             setting = otherPart.GetComponent<AnthorPointSetting>();
             setting.BeChecked();//来点视觉效果
             AuchorInf = otherPart.GetComponent<ObjInf>();
@@ -38,8 +37,12 @@ public class CombinationChecker : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<ObjInf>().partType == thisPart.partType)
+        if (other.CompareTag("Author") && other.GetComponent<ObjInf>().partType == thisPart.partType)
+        {
             other.GetComponent<AnthorPointSetting>().OutCheck();
+            CheckOver = false;
+        }
+        else { }
 
     }
 
@@ -48,6 +51,8 @@ public class CombinationChecker : MonoBehaviour
     {
         // 禁用物理和拖拽
         GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<SphereCollider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         GetComponent<Draggable>().enabled = false;
         thisPart.isConnected = true;
 

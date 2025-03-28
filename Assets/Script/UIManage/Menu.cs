@@ -14,7 +14,6 @@ public class Menu : MonoBehaviour
     void Start()
     {
         EscMenu.SetActive(false);
-        SettingMenu.SetActive(false);
         ExitMenu.SetActive(false);
     }
 
@@ -110,5 +109,15 @@ public class Menu : MonoBehaviour
             ExitMenu.SetActive(false);
             ReturnButtonInExit();
         }
+    }
+
+    public void GoToNextScene() 
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void ReloadCombinationScene() 
+    {
+        SceneManager.LoadScene(1);
     }
 }
