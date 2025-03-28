@@ -6,13 +6,15 @@ public class CatapultManager : MonoBehaviour
     public static CatapultManager Instance;
 
     [SerializeField] DialogueTreeController dialogueTree;
+    [SerializeField] GameObject Sceneobj;
     [Header("总部件数量")]
-    public int totalParts = 5;
+    public int totalParts;
     private int connectedParts = 0;
 
     void Awake()
     {
         Instance = this;
+        Sceneobj.SetActive(false);
     }
 
     public void CheckCompletion()
@@ -20,8 +22,14 @@ public class CatapultManager : MonoBehaviour
         connectedParts++;
         if (connectedParts == totalParts)
         {
-            dialogueTree.StartDialogue();
-            // 触发完成事件
+            Invoke("Dialogue", 1f);
+            Sceneobj.SetActive(true);
         }
+    }
+
+    private void Dialogue()
+    {
+        dialogueTree.StartDialogue();
+        // 触发完成事件
     }
 }

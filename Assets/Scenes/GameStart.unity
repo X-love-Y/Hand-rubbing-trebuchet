@@ -317,6 +317,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011374680962, guid: ea4f45f1433c2404197edc445210b679, type: 3}
+      propertyPath: m_Text
+      value: "\u70B9\u51FB\u6211"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011374680962, guid: ea4f45f1433c2404197edc445210b679, type: 3}
+      propertyPath: m_Color.b
+      value: 0.51290494
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011374680962, guid: ea4f45f1433c2404197edc445210b679, type: 3}
+      propertyPath: m_Color.g
+      value: 0.93785924
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011374680962, guid: ea4f45f1433c2404197edc445210b679, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011374680962, guid: ea4f45f1433c2404197edc445210b679, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -405,7 +425,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 836712895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2047379745}
+        m_TargetAssemblyTypeName: GameStart, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &836712895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,6 +874,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919181688}
   m_CullTransparentMesh: 1
+--- !u!1 &2047379744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047379746}
+  - component: {fileID: 2047379745}
+  m_Layer: 0
+  m_Name: GameStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2047379745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047379744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d147ae14efeeb44817f38d762ca730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2047379746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047379744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 471.18494, y: -389.10446, z: 520.9167}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140575298
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +930,7 @@ GameObject:
   - component: {fileID: 2140575300}
   - component: {fileID: 2140575299}
   m_Layer: 0
-  m_Name: DialogueTree
+  m_Name: "\u4ECB\u7ECD"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -889,11 +965,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"statement":{"_text":"\u89c2\u53e4\u4eca\u4e4b\u53d8\uff0c\u8bc6\u5668\u68b0\u4e4b\u5999\u3002\u300a\u5468\u6613\u300b\u6709\u4e91
+  _boundGraphSerialization: '{"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"statement":{"_text":"\u5bf9\u8bdd\u6811\u7b80\u4ecb\uff1a\u5728\u5bf9\u8bdd\u6eda\u52a8\u5b8c\u6bd5\u540e\uff0c\u5bf9\u8bdd\u6846\u53f3\u4e0b\u89d2\u4f1a\u51fa\u73b0\u201c\u70b9\u51fb\u6211\u201d\u7684\u5b57\u6837\uff0c\u70b9\u51fb\u8be5\u5b57\u4f53\u5373\u53ef\u67e5\u770b\u4e0b\u4e00\u5bf9\u8bdd\uff0c\u5728\u5bf9\u8bdd\u6eda\u52a8\u5b8c\u6bd5\u540e\u4f1a\u81ea\u884c\u6d88\u5931\u3002\n"},"_position":{"x":201.0,"y":251.0},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"0"},{"statement":{"_text":"\u89c2\u53e4\u4eca\u4e4b\u53d8\uff0c\u8bc6\u5668\u68b0\u4e4b\u5999\u3002\u300a\u5468\u6613\u300b\u6709\u4e91
     \"\u5907\u7269\u81f4\u7528\uff0c\u7acb\u6210\u5668\u4ee5\u4e3a\u5929\u4e0b\u5229\"\uff0c\u4eca\u6709\u6b64\u673a\u5f85\u541b\u9a7e\u9a6d\u3002\u4e14\u770b\u300a\u6b66\u7ecf\u603b\u8981\u300b\u6240\u7ed8
     \"\u53d1\u77f3\u8f66\" \u5982\u4f55\u5316\u4e3a\u638c\u4e2d\u795e\u673a \u2014\u2014
     \u8bf7\u70b9\u51fb \"\u5f00\u59cb\u63a8\u6f14\"\uff0c\u89c1\u8bc1 \"\u529b\u53d1\u4e8e\u6beb\u5398\uff0c\u529f\u89c1\u4e8e\u5343\u91cc\"
-    \u7684\u7269\u7406\u4e4b\u9053\u3002"},"_position":{"x":201.0,"y":251.0},"$type":"NodeCanvas.DialogueTrees.StatementNode"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"actorParameters":[],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+    \u7684\u7269\u7406\u4e4b\u9053\u3002"},"_position":{"x":195.7033,"y":384.9075},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"1"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"actorParameters":[],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences: []
   _boundGraphSource:
     _version: 3.28
