@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;// 目标对象
     [SerializeField] private float translatSpeed;// 平移速度
     [SerializeField] private float rotationSpeed;// 旋转速度
+    [SerializeField] private float pitchAngle; // 摄像机的俯仰角度
 
     private void FixedUpdate()
     {
@@ -25,7 +26,8 @@ public class CameraFollow : MonoBehaviour
     {
         var direction = target.position - transform.position;
         var rotation = Quaternion.LookRotation(direction, Vector3.up);
-        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        Quaternion pitchRotation = Quaternion.Euler(pitchAngle, 0, 0);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation * pitchRotation, rotationSpeed * Time.deltaTime);
     }
 
 }

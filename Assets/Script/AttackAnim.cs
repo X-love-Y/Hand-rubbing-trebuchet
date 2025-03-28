@@ -9,6 +9,7 @@ public class AttackAnim : MonoBehaviour
     public Vector3 forceDirection;
     public float force = 10f;
     public Transform tr;
+    public Transform car;
 
     [SerializeField] private GameObject targetObj;
 
@@ -47,6 +48,10 @@ public class AttackAnim : MonoBehaviour
         {
             rb = newStone.GetComponent<Rigidbody>();
         }
+
+        // 设置投石方向，向上偏移一定角度
+        Vector3 upOffset = Vector3.up * 0.5f; // 向上偏移的向量，可以根据需要调整大小
+        forceDirection = -car.transform.forward + upOffset;
 
         rb.AddForce(forceDirection * force, ForceMode.Impulse);
     }
