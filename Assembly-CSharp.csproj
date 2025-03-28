@@ -798,11 +798,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NodeCanvas.csproj">
-      <Project>{1B9DDEAF-BF74-E6E6-6473-E0ED16D52BF9}</Project>
+      <Project>{BC877CB5-4439-6FBC-E62D-556F0DDD4127}</Project>
       <Name>NodeCanvas</Name>
     </ProjectReference>
     <ProjectReference Include="ParadoxNotion.csproj">
-      <Project>{1E7B5AC8-7EC0-1C38-0A6E-9E99683BC949}</Project>
+      <Project>{4E1B49E1-90B0-BE02-C46D-B305AB13421E}</Project>
       <Name>ParadoxNotion</Name>
     </ProjectReference>
   </ItemGroup>

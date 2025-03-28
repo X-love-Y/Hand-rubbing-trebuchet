@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeCanvas", "NodeCanvas.csproj", "{BC877CB5-4439-6FBC-E62D-556F0DDD4127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParadoxNotion", "ParadoxNotion.csproj", "{4E1B49E1-90B0-BE02-C46D-B305AB13421E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{A45B7275-0D9C-09B6-CAD2-77FBA86C0BE1}"
 EndProject
 Global
@@ -9,6 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC877CB5-4439-6FBC-E62D-556F0DDD4127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC877CB5-4439-6FBC-E62D-556F0DDD4127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC877CB5-4439-6FBC-E62D-556F0DDD4127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC877CB5-4439-6FBC-E62D-556F0DDD4127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1B49E1-90B0-BE02-C46D-B305AB13421E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1B49E1-90B0-BE02-C46D-B305AB13421E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1B49E1-90B0-BE02-C46D-B305AB13421E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1B49E1-90B0-BE02-C46D-B305AB13421E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A45B7275-0D9C-09B6-CAD2-77FBA86C0BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A45B7275-0D9C-09B6-CAD2-77FBA86C0BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A45B7275-0D9C-09B6-CAD2-77FBA86C0BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
