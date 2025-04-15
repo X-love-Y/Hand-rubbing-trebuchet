@@ -1,11 +1,10 @@
-using NodeCanvas.DialogueTrees;
+
 using UnityEngine;
 
 public class CatapultManager : MonoBehaviour
 {
     public static CatapultManager Instance;
 
-    [SerializeField] DialogueTreeController dialogueTree;
     [SerializeField] GameObject Sceneobj;
     [Header("总部件数量")]
     public int totalParts;
@@ -29,7 +28,6 @@ public class CatapultManager : MonoBehaviour
 
     private void Dialogue()
     {
-        dialogueTree.StartDialogue();
         // 触发完成事件
     }
 }

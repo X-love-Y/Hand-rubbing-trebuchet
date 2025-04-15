@@ -26,7 +26,7 @@ public class Move : MonoBehaviour
     //}
     public float moveSpeed = 5f;
     private Rigidbody rb;
-    private ObjectPreview preview;
+    //private ObjectPreview preview;
 
     void Start()
     {
@@ -35,7 +35,7 @@ public class Move : MonoBehaviour
 
     void OnEnable()
     {
-        preview = new ObjectPreview();
+        //preview = new ObjectPreview();
     }
 
     void FixedUpdate()
@@ -48,8 +48,8 @@ public class Move : MonoBehaviour
         rb.AddForce(movement * moveSpeed);
     }
 
-    void OnDisable()
-    {
-        preview.Cleanup();
-    }
+    //void OnDisable()
+    //{
+    //    preview.Cleanup();
+    //}
 }

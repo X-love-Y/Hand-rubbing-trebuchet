@@ -67,7 +67,6 @@
     <Compile Include="Assets\Script\Combination\CombinationChecker.cs" />
     <Compile Include="Assets\Script\Combination\ObjInf.cs" />
     <Compile Include="Assets\Script\AttackAnim.cs" />
-    <Compile Include="Assets\Script\UIManage\StartDialogue.cs" />
     <Compile Include="Assets\Script\Combination\CatapultManager.cs" />
     <Compile Include="Assets\Script\Combination\Draggable.cs" />
     <Compile Include="Assets\Script\UIManage\Menu.cs" />
@@ -799,14 +798,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NodeCanvas.csproj">
-      <Project>{1B9DDEAF-BF74-E6E6-6473-E0ED16D52BF9}</Project>
-      <Name>NodeCanvas</Name>
-    </ProjectReference>
-    <ProjectReference Include="ParadoxNotion.csproj">
-      <Project>{1E7B5AC8-7EC0-1C38-0A6E-9E99683BC949}</Project>
-      <Name>ParadoxNotion</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

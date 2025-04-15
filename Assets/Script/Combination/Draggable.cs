@@ -1,21 +1,20 @@
-using NodeCanvas.DialogueTrees;
+
 using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
     private Vector3 offset;
     public bool isDragging = false;
-    private DialogueTreeController dialogueTree;
     [SerializeField] float YPosOffset = .01f;
     private void Start()
     {
-        dialogueTree = GetComponent<DialogueTreeController>();
+
     }
     void OnMouseDown()
     {
         Vector3 mouseWorldPos = GetMouseAsWorldPosition();
         offset = transform.position - mouseWorldPos;
-        dialogueTree.StartDialogue();
+
         isDragging = true;
     }
 

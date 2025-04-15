@@ -10,12 +10,12 @@ public class UIAppearController : MonoBehaviour
     //单例模式我爱你
     public static UIAppearController instance;
     //声明了本脚本类的实例instance
-    public RectTransform canvasRect; // 拖入Canvas的RectTransform
-    public RectTransform hoverImage; // 拖入需要显示的UI图像
+    [SerializeField] private RectTransform canvasRect; // 拖入Canvas的RectTransform
+    [SerializeField] private RectTransform hoverImage; // 拖入需要显示的UI图像
 
     [Header("Text信息")]
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI introText;
+    [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private TextMeshProUGUI introText;
     public List<TextMeshProUGUI> textMeshPros = new List<TextMeshProUGUI>();
     [Header("选中")]
     public UIAppearSet slectedUI;
